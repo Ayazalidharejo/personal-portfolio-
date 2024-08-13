@@ -1,0 +1,689 @@
+/**---------    Resetting    ---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**---------   font  -----------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+
+
+html {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f7f7;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1160px;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+/**---------    Navbar      ---------*/
+.navbar {
+  background-color: #e4edfb;
+  box-shadow: 0px 3px 59px #b9164614;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+ul {
+  list-style-type: none;
+}
+nav ul li a {
+  padding: 0 2rem;
+  color: #424242;
+}
+nav ul li a:hover {
+  color: #fca738;
+}
+.navbar h1 {
+  color: #105652;
+  padding: 15px 0;
+}
+
+/**---------    Hero Section    ---------*/
+.hero-section {
+  max-height: 470px;
+  margin-top: 60px;
+  background-color: #105652;
+}
+.hero-text {
+  padding: 70px 10px 0 0;
+}
+.hero-title h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #fca738;
+  margin-bottom: 3px;
+}
+.hero-title h2 {
+  font-size: 2.45rem;
+  font-weight: 700;
+  color: #fbf3e4;
+}
+.hero-para {
+  color: #fbf3e4;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 54px 0px 32px 0px;
+}
+.hero-image img {
+  max-height: 570px;
+  margin-top: -30px;
+}
+
+/**----------    Buttons   ----------*/
+.button {
+  color: #fbf3e4;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+.button-blue {
+  padding: 14px 52px;
+  background: #09be69 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 29px #b80bbe69;
+  opacity: 0.99;
+  margin-right: 36px;
+}
+.button-blue:hover {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}
+.button-yellow {
+  padding: 15px 27px;
+  background: #eb6e1a 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 28px #f57f1769;
+  opacity: 1;
+  cursor: pointer;
+
+}
+.button-yellow:hover{
+  transform: scale(1.1);
+  transition: 1000ms;
+}
+
+/*!---------  Backgoround Waves fixed  ------------*/
+.waves {
+  position: relative;
+}
+svg {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.z {
+  position: relative;
+  z-index: 2;
+}
+
+/**---------     About section     ----------*/
+.about {
+  margin: 43px auto;
+}
+.about-card {
+  height: 606px;
+  opacity: 1;
+}
+.about-image img {
+  max-height: 100%;
+}
+.about-text h2 {
+  margin-top: 27px;
+  color: #105652;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.about-text h2::after {
+  content: "";
+  display: block;
+  max-width: 209px;
+  margin: 13px 0 44px 0;
+  border-top: 7px solid #fca738;
+}
+.about-text p {
+  color: #105652;
+  font-size: 1.13rem;
+  font-weight: 400;
+  line-height: 1.65;
+  max-width: 536px;
+  margin-bottom: 20px;
+}
+.about-lang {
+  max-width: 535px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 30px #00000029;
+  border-radius: 20px;
+  padding: 15px 17px;
+}
+.about-lan p {
+  color: #105652;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.logos img {
+  width: 50px;
+}
+
+/**----------     Portolio Section   -------------*/
+.title h2 {
+  color: #105652;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.title h2::after {
+  content: "";
+  display: block;
+  max-width: 209px;
+  margin: 10px 0 44px 0;
+  border-top: 7px solid #fca738;
+}
+.work {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 244px;
+  width: 352px;
+  border-radius: 12px;
+  margin: 6px 0;
+}
+#work1 {
+  background-image: url(./ice.png);
+}
+#work2 {
+  flex-basis: 300px;
+  background-image: url(./sas.png);
+}
+#work3 {
+  flex-basis: 450px;
+  background-image: url(./docter.png);
+}
+#work4 {
+  flex-basis: 300px;
+  background-image: url(./portfolio.png);
+}
+#work5 {
+  flex-basis: 450px;
+  background-image: url(./shopping.png);
+}
+#work6 {
+  background-image: url(./teeth.png);
+}
+/**---------     Resume Section      -----------*/
+.resume {
+  margin: 43px auto;
+}
+.resume-inner-section {
+  flex-basis: 697px;
+}
+.resume-content {
+  width: 697px;
+}
+.resume-content h3 {
+  font-size: 1.5em;
+  color: #105652;
+  font-weight: 600;
+}
+.resume-content h4 {
+  font-size: 1.25em;
+  color: #105652;
+  font-weight: 600;
+}
+.resume-content h6 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #105652;
+  margin-top: 17px;
+}
+hr {
+  border: 1px solid #c2c2c2;
+  margin: 10px 0 38px 0;
+}
+.work-experience {
+  margin-bottom: 38px;
+}
+.experience {
+  margin-bottom: 56px;
+  position: relative;
+}
+.experience::before {
+  content: "";
+  border-left: 2px solid #09bcab;
+  position: absolute;
+  height: 110px;
+}
+.timeline i {
+  color: #09bcab;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-size: 22px;
+  margin-left: -10px;
+  margin-top: -20px;
+}
+.workname {
+  margin-left: 2em;
+}
+.workname p {
+  margin-top: 1.5em;
+  max-width: 500px;
+  color: #333333;
+  font-weight: 400;
+  line-height: 24px;
+}
+.work-year p {
+  background-color: #fca738;
+  box-shadow: 0px 3px 7px #f57f173d;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 7px 17px;
+}
+.resume-image {
+  width: 496px;
+}
+.card {
+  color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 12px;
+  box-shadow: 0px 0px 59px #10565221;
+}
+.image-card {
+  margin: 0 auto;
+  width: 404px;
+  height: 427px;
+  position: relative;
+}
+.image-card img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  max-width: 125%;
+}
+.social-icons {
+  margin: 9px auto;
+  width: 404px;
+  height: 82px;
+  position: relative;
+}
+.social-icons ul {
+  margin: 18px 30px;
+}
+.social-icons li > img {
+  width: 45px;
+}
+.action{
+  border-radius: 50px;
+  padding-right: 30px;
+  padding-top: 17px;
+}
+.resume1{
+  position: absolute;
+  left: 900px;
+  height: 400px; 
+  width: 370px;
+  margin-left: 55px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+} 
+.first1{
+  position: relative;
+}
+.icons{
+  text-decoration: none;
+  background-color: rgb(190, 36, 36);
+  color: white;
+  font-size: 27px;
+  border-radius: 30px;
+  padding: 7px;
+  margin: 0px 10px;
+}
+.portfolio1{
+  color: black;
+  font-weight: 800;
+  padding-top: 200px;
+  padding-left: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(128, 70, 70, 0.5);
+}
+.rose{
+  background: linear-gradient(#a7b953,#3a6e7e,#a7b953,#3f9b70,#c03c73);
+  position: sticky;
+  top: 0%;
+
+}
+.btn-79,
+.btn-79 *,
+.btn-79 :after,
+.btn-79 :before,
+.btn-79:after,
+.btn-79:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-79 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#9ab119;
+  background-image: none;
+  color: 
+#c51414;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#0c0b0b, #fff);
+  padding: 0;
+}
+.btn-79:disabled {
+  cursor: default;
+}
+.btn-79:-moz-focusring {
+  outline: auto;
+}
+.btn-79 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-79 [hidden] {
+  display: none;
+}
+.btn-79 {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  -webkit-mask-image: none;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-79 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-79:before {
+  background: 
+#050505;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.btn-79:hover:before {
+  left: 0;
+  width: 100%;
+} 
+.btn-76,
+.btn-76 *,
+.btn-76 :after,
+.btn-76 :before,
+.btn-76:after,
+.btn-76:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-76 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#0e0d0d, #fff);
+  padding: 0;
+}
+.btn-76:disabled {
+  cursor: default;
+}
+.btn-76:-moz-focusring {
+  outline: auto;
+}
+.btn-76 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-76 [hidden] {
+  display: none;
+}
+.btn-76 {
+  --neon: 
+#0ea5e9;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  outline: 4px solid 
+#fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s linear 0.1s;
+}
+.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: 
+#fff;
+  outline-color: 
+transparent;
+  transition: 0.2s linear 0.6s;
+}
+.btn-76 span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.btn-76 .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.btn-76 .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.btn-76 .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.btn-76 .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
+.hero0{
+  gap: 18px;
+}
+.btn-24,
+.btn-24 *,
+.btn-24 :after,
+.btn-24 :before,
+.btn-24:after,
+.btn-24:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-24 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-24:disabled {
+  cursor: default;
+}
+.btn-24:-moz-focusring {
+  outline: auto;
+}
+.btn-24 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-24 [hidden] {
+  display: none;
+}
+.btn-24 {
+  --background: 
+#000;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-24 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-24:after,
+.btn-24:before {
+  --tilt: 20px;
+  background: 
+#fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-24:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-24:hover span {
+  transform: translateX(-20px);
+}
+.btn-24:hover:after,
+.btn-24:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
